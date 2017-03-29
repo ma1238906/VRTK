@@ -33,7 +33,7 @@
             SetPlayerClimb();
             if (pc == null)
             {
-                Debug.LogError("The VRTK_PlayerClimb_UnityEvents script requires to be attached to a GameObject that contains a VRTK_PlayerClimb script");
+                VRTK_Logger.Error(VRTK_Logger.GetCommonMessage("REQUIRED_COMPONENT_MISSING_FROM_GAMEOBJECT", new string[] { "VRTK_PlayerClimb_UnityEvents", "VRTK_PlayerClimb", "the same" }));
                 return;
             }
 

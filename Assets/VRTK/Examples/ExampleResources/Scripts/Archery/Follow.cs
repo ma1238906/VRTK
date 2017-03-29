@@ -24,7 +24,7 @@
             }
             else
             {
-                Debug.LogError("No follow target defined!");
+                VRTK_Logger.Error(VRTK_Logger.GetCommonMessage("NOT_DEFINED", new string[] { "target" }));
             }
         }
     }

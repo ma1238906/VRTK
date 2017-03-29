@@ -52,7 +52,7 @@ namespace VRTK
 
             if (!objectToGrab)
             {
-                Debug.LogError("You have to assign an object that should be grabbed.");
+                VRTK_Logger.Error(VRTK_Logger.GetCommonMessage("NOT_DEFINED", new string[] { "objectToGrab" }));
                 yield break;
             }
 
